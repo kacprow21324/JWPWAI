@@ -1,10 +1,15 @@
-const fs = require("fs");
+const http = require('http');
 
-console.log("Początek skryptu.");
+const hostname = '127.0.0.1';
+const port = 8888;
 
-fs.readFile("package.json", function(err, data) {
-    if(err) return console.error(err);
-    console.log(data.toString());
+const server = http.createServer(function(request, response) {
+    response.statusCode = 200;
+    response.setHeader('Content-Type', 'text/plain');
+    response.end('Witaj, z serwera node.js!\n');
 });
 
-console.log("Koniec skryptu.");
+server.listen(port, hostname, () => {
+    console.log(`Server running at http://${hostname}:${port}/`);
+});
+
