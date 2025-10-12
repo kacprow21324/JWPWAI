@@ -1,7 +1,4 @@
 import uniqueString from 'unique-string';
 
-const fs = require("fs");
-const data = fs.readFileSync('package.json');
-
 console.log(uniqueString());
-console.log("\ngenerowanie unikatowego losowego napisu.");
+console.log("\nTworzy unikalny losowy ciąg o długości 32 znaków.");
