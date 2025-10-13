@@ -8,7 +8,7 @@ const server = http.createServer(function(req, res){
 function getTitles(res){
     fs.readFile('./titles.json', function(err, data){
         if(err){
-            hadError(err,res);
+            return hadError(err,res);
         } else {
             getTemplate(JSON.parse(data.toString()),res);
         }
@@ -18,7 +18,7 @@ function getTitles(res){
 function getTemplate(titles,res){
     fs.readFile('./template.html', function(err, data) { 
         if (err) { 
-            hadError(err,res);
+            return hadError(err,res);
         } else {
             formatHtml(titles, data.toString(), res);
         }
