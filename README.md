@@ -1,4 +1,4 @@
-# 📖 PJS_21324
+# 📖 JWPWAI
 > Repozytorium zawiera materiały z laboratoriów z przedmiotu: **Języki wysokiego poziomu w aplikacjach internetowych**.
 
 ---
