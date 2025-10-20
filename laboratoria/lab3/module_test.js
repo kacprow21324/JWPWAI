@@ -1,37 +1,45 @@
 const currency = require('./currency1');
 
-console.log("Przelicznik walut:");
-console.log("100 złotych na euro: " + currency.zlotyToEuro(100));
-console.log("100 złotych na franki kongijskie: " + currency.zlotyToFrankKongijski(100));
-console.log("100 złotych na juany: " + currency.zlotyToYuan(100));
-console.log("100 złotych na boliwary: " + currency.zlotyToBoliwar(100));
-console.log("100 złotych na korony czeskie: " + currency.zlotyToKoronaCzeska(100) + "\n");
+console.log("---------------------------");
+console.log("Test modułu przelicznika:");
+console.log("---------------------------");
+
+console.log("\nPrzelicznik walut:");
+console.log("100 złotych na euro: " + currency.zlotyToWaluta(100,"euro"));
+console.log("100 złotych na franki kongijskie: " + currency.zlotyToWaluta(100,"frankKongijski"));
+console.log("100 złotych na juany: " + currency.zlotyToWaluta(100,"yuan"));
+console.log("100 złotych na boliwary: " + currency.zlotyToWaluta(100,"boliwar"));
+console.log("100 złotych na korony czeskie: " + currency.zlotyToWaluta(100,"koronaCzeska") + "\n");
 
 console.log("Przelicznik odwrotny:");
-console.log("23 euro na złote: " + currency.euroToZloty(23));
-console.log("7246 franków kongijskich na złote: " + currency.frankKongijskiToZloty(7246));
-console.log("194 juany na złote: " + currency.yuanToZloty(194));
-console.log("5369 boliwary na złote: " + currency.boliwarToZloty(5369));
-console.log("573 korony czeskie na złote: " + currency.koronaCzeskaToZloty(573) + "\n");
-
-const Currency2 = require('./currency2');
-const currency2 = new Currency2(100);
+console.log("23 euro na złote: " + currency.walutaToZloty(23,"euro"));
+console.log("72460 franków kongijskich na złote: " + currency.walutaToZloty(72460,"frankKongijski"));
+console.log("194 juany na złote: " + currency.walutaToZloty(194,"yuan"));
+console.log("5369 boliwary na złote: " + currency.walutaToZloty(5369,"boliwar"));
+console.log("573 korony czeskie na złote: " + currency.walutaToZloty(573,"koronaCzeska") + "\n");
 
 console.log("-----------------------------------");
 console.log("Test modułu Obiektowego przelicznika:");
 console.log("-----------------------------------");
 
+const Currency2 = require('./currency2');
+const currency2 = new Currency2(100);
+
 console.log("\nPrzelicznik walut:");
-console.log("100 złotych na euro: " + currency2.zlotyToEuro());
-console.log("100 złotych na franki kongijskie: " + currency2.zlotyToFrankKongijski());
-console.log("100 złotych na juany: " + currency2.zlotyToYuan());
-console.log("100 złotych na boliwary: " + currency2.zlotyToBoliwar());
-console.log("100 złotych na korony czeskie: " + currency2.zlotyToKoronaCzeska() + "\n");
+console.log("100 złotych na euro: " + currency2.zlotyToWaluta(100,"euro"));
+console.log("100 złotych na franki kongijskie: " + currency2.zlotyToWaluta(100,"frankKongijski"));
+console.log("100 złotych na juany: " + currency2.zlotyToWaluta(100,"yuan"));
+console.log("100 złotych na boliwary: " + currency2.zlotyToWaluta(100,"boliwar"));
+console.log("100 złotych na korony czeskie: " + currency2.zlotyToWaluta(100,"koronaCzeska") + "\n");
 
 console.log("Przelicznik odwrotny:");
-console.log("23 euro na złote: " + currency2.euroToZloty(23));   
-console.log("7246 franków kongijskich na złote: " + currency2.frankKongijskiToZloty(7246));
-console.log("194 juany na złote: " + currency2.yuanToZloty(194));
-console.log("5369 boliwary na złote: " + currency2.boliwarToZloty(5369));
-console.log("573 korony czeskie na złote: " + currency2.koronaCzeskaToZloty(573));
+console.log("23 euro na złote: " + currency2.walutaToZloty(23,"euro"));
+console.log("72460 franków kongijskich na złote: " + currency2.walutaToZloty(72460,"frankKongijski"));
+console.log("194 juany na złote: " + currency2.walutaToZloty(194,"yuan"));
+console.log("5369 boliwary na złote: " + currency2.walutaToZloty(5369,"boliwar"));
+console.log("573 korony czeskie na złote: " + currency2.walutaToZloty(573,"koronaCzeska") + "\n");
+
+
+
+
 
