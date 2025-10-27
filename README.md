@@ -27,7 +27,8 @@ JWPWAI/
 │   ├── lab6/                   
 │   ├── lab7/                   
 │   ├── lab8/                   
-│   └── lab9/                                   
+│   └── lab9/
+├── LICENSE                                     
 └── README.md                   
 
 ```
