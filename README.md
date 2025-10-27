@@ -8,20 +8,26 @@
 
 ---
 
+## 🔗 Strona główna
+
+🌐 [Strona na GitHub Pages](https://kacprow21324.github.io/JWPWAI/)
+
+---
+
 ## 📁 Struktura Repozytorium
 
 ```text
-PJS_21324/
+JWPWAI/
 ├── laboratoria/        
-│   ├── LAB1/                   
-│   ├── LAB2/                   
-│   ├── LAB3/                   
-│   ├── LAB4/                   
-│   ├── LAB5/                   
-│   ├── LAB6/                   
-│   ├── LAB7/                   
-│   ├── LAB8/                   
-│   └── LAB9/                                   
+│   ├── lab1/                   
+│   ├── lab2/                   
+│   ├── lab3/                   
+│   ├── lab4/                   
+│   ├── lab5/                   
+│   ├── lab6/                   
+│   ├── lab7/                   
+│   ├── lab8/                   
+│   └── lab9/                                   
 └── README.md                   
 
 ```
@@ -36,6 +42,14 @@ PJS_21324/
 2. **Przejdź do katalogu**  
    ```bash
    cd JWPWAI
+   ```
+3. **Otwórz stronę główną projektu**  
+   Po prostu otwórz plik `index.html` w przeglądarce:  
+   ```bash
+   # macOS / Linux
+   open index.html
+   # Windows PowerShell
+   start index.html
    ```
 ---
 
