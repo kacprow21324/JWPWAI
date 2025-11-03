@@ -4,6 +4,7 @@ import ScoreDisplay from './ScoreDisplay';
 import TaskList from './TaskList';
 import UserList from './UserList';
 import TimerCounter from './TimerCounter';
+import RotatingImage from './RotatingImage';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <TimerCounter/>
 
         <h1>Zadanie 3.</h1>
+        <RotatingImage/>
 
       </header>
     
