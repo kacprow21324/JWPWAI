@@ -5,34 +5,96 @@ import TaskList from './TaskList';
 import UserList from './UserList';
 import TimerCounter from './TimerCounter';
 import RotatingImage from './RotatingImage';
+import HoverArea from './HoverArea';
+import ImageToggle from './ImageToggle';
+import JsonLoader from './JsonLoader';
+import FileUpload from './FileUpload';
+import StyleChanger from './StyleChanger';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Zadanie 2.</h1>
-        <h2>Ćwiczenie 1.</h2>
-        <ToggleDetails/>
 
-        <h2>Ćwiczenie 2.</h2>
-        <ScoreDisplay score={49}/>
-        <ScoreDisplay score={51}/>
-        <ScoreDisplay score={81}/>
+      <div className="App-header">
+        <h1>Laboratorium 5</h1>
+      </div>
 
-        <h2>Ćwiczenie 3.</h2>
-        <TaskList/>
+      <main className="App-content">
+      
+        <h2>Zadanie 2.</h2>
+        
+        <div className="exercise-row">
+          
+          <div className="exercise-card">
+            <h3>Ćwiczenie 1.</h3>
+            <ToggleDetails/>
+          </div>
+          
+          <div className="exercise-card">
+            <h3>Ćwiczenie 2.</h3>
+            <ScoreDisplay score={49}/>
+            <ScoreDisplay score={51}/>
+            <ScoreDisplay score={81}/>
+          </div>
 
-        <h2>Ćwiczenie 4.</h2>
-        <UserList/>
+          <div className="exercise-card">
+            <h3>Ćwiczenie 3.</h3>
+            <TaskList/>
+          </div>
 
-        <h2>Ćwiczenie 5.</h2>
-        <TimerCounter/>
+          <div className="exercise-card">
+            <h3>Ćwiczenie 4.</h3>
+            <UserList/>
+          </div>
 
-        <h1>Zadanie 3.</h1>
-        <RotatingImage/>
+          <div className="exercise-card">
+            <h3>Ćwiczenie 5.</h3>
+            <TimerCounter/>
+          </div>
 
-      </header>
-    
+        </div>
+
+        <h2>Zadanie 3.</h2>
+
+        <div className="exercise-row">
+          
+          <div className="exercise-card">
+            <h3>handleCLick</h3>
+            <RotatingImage/>
+          </div>
+          
+          <div className="exercise-card">
+            <h3>handleMouseOver:</h3>
+            <HoverArea />
+          </div>
+
+          <div className="exercise-card">
+            <h3>showImage:</h3>
+            <ImageToggle />
+          </div>
+
+          <div className="exercise-card">
+            <h3>loadDataFromJson:</h3>
+            <JsonLoader />
+          </div>
+
+          <div className="exercise-card">
+            <h3>uploadFile:</h3>
+            <FileUpload />
+          </div>
+
+          <div className="exercise-card">
+            <h3>changeStyle (Spread):</h3>
+            <StyleChanger />
+          </div>
+
+        </div>
+      </main>
+      
+      <div className="App-footer">
+        <p>Autor: Kacper Woszczyło nr. indeksu: 21324</p>
+      </div>
+      
     </div>
   );
 }

@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "miasto": "Elbląg",
+    "kod_pocztowy": "82-300"
+  },
+  {
+    "id": 2,
+    "miasto": "Młynary",
+    "kod_pocztowy": "14-420"
+  }
+]
