@@ -3,8 +3,10 @@
 
 ---
 
-## 👤Autor
-- Kacper Woszczyło - 21324
+## 👤 Autor
+* Kacper Woszczyło - 21324
+    * GitHub: [https://github.com/kacprow21324](https://github.com/kacprow21324)
+    * Email: 21324@student.ans-elblag.pl
 
 ---
 
@@ -13,6 +15,13 @@
 🌐 [Strona na GitHub Pages](https://kacprow21324.github.io/JWPWAI/)
 
 ---
+
+## 🔗 Foodie Project (Next.js)
+
+* **Aplikacja Online (Vercel)**
+    * 🌐 **[Aplikacja Foodie Project](https://jwpwai-foodie-project.vercel.app/)**
+* **Repozytorium Projektu**
+    * 🔗 [https://github.com/kacprow21324/jwpwai-foodie-project](https://github.com/kacprow21324/jwpwai-foodie-project)
 
 ## 📁 Struktura Repozytorium
 
@@ -24,10 +33,8 @@ JWPWAI/
 │   ├── lab3/                   
 │   ├── lab4/                   
 │   ├── lab5/                   
-│   ├── lab6/                   
-│   ├── lab7/                   
-│   ├── lab8/                   
-│   └── lab9/
+│   ├── lab6/                                                  
+│   └── różne
 ├── LICENSE                                     
 └── README.md                   
 
@@ -52,10 +59,3 @@ JWPWAI/
    # Windows PowerShell
    start index.html
    ```
----
-
-## 📬 Kontakt
-
-W razie pytań:
-- Email:   21324@student.ans-elblag.pl
-- GitHub:  https://github.com/kacprow21324
